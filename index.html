@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zehra'm İçin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="matrixCanvas"></canvas>
+    <div class="main-container">
+        <header class="glass-card">
+            <h1 class="main-title">Zehra'm & Biz</h1>
+            
+            <div class="counter-container">
+                <div class="counter-item">
+                    <span class="counter-label">Tanıştığımız Gün</span>
+                    <span id="tanisma-sayac" class="counter-val">Yükleniyor...</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-label">Sevgili Olduğumuz Gün</span>
+                    <span id="sevgili-sayac" class="counter-val">Yükleniyor...</span>
+                </div>
+            </div>
+
+            <nav class="button-container">
+                <button class="modern-btn" onclick="openSection('nedenler')">200 Neden</button>
+                <button class="modern-btn" onclick="openSection('galeri')">Anılarımız</button>
+                <button class="modern-btn" onclick="openSection('mektup')">11. Ay Mektubumuz</button>
+            </nav>
+        </header>
+        <div id="nedenler" class="content-section hidden">
+            <div class="glass-card scrollable">
+                <h2 class="section-title">Seni Sevme Nedenlerim</h2>
+                <!--<div id="reasonContainer"></div>-->
+                <p>1. 4 Haziran'da hayatıma girişin.</p>
+                <p>2. İlk "Merhaba" dediğin anki ses tonun.</p>
+                <p>3. 14 Haziran'da "Biz" olmanın gururu.</p>
+                <p>4. Seni ilk gördüğümde kalbimin ritminin değişmesi.</p>
+                <p>5. İlk fotoğrafımıza her baktığımda hissettiğim o ilk heyecan.</p>
+                <p>6. Kaderin bizi 400 kilometreye rağmen birleştirmesi.</p>
+                <p>7. İlk uzun konuşmamızın hiç bitmesini istemeyişim.</p>
+                <p>8. Bakışlarındaki o tarif edilemez derinlik.</p>
+                <p>9. Kimse yokken yanımda olan tek kişi olman.</p>
+                <p>10. Çocuksu neşen.</p>
+                <p>11. Olgun duruşun.</p>
+                <p>12. Adaletli ruhun.</p>
+                <p>13. Merhametli kalbin.</p>
+                <p>14. Kimseye benzemeyen o eşsiz karakterin.</p>
+                <p>15. Zekanla beni her seferinde şaşırtman.</p>
+                <p>16. Güçlü duruşunla bana ilham vermen.</p>
+                <p>17. Dürüstlüğün.</p>
+                <p>18. Sadakatin.</p>
+                <p>19. Kimsenin görmediği detayları fark etmen.</p>
+                <p>20. Alçakgönüllülüğün.</p>
+                <p>21. Dünyanın en güzel manzarası: Gülüşün.</p>
+                <p>22. Gözlerinin içindeki o parıltı.</p>
+                <p>23. Güldüğünde kısılan gözlerin.</p>
+                <p>24. Kahkahanın kulaklarımdaki en güzel melodi olması.</p>
+                <p>25. Sadece bana özel olan o masum gülümsemen.</p>
+                <p>26. Bakışlarındaki huzur verici güç.</p>
+                <p>27. Gözlerinin rengindeki derin anlam.</p>
+                <p>28. Her güldüğünde içimde açan çiçekler.</p>
+                <p>29. Beni dünyanın en şanslı adamı hissettirmen.</p>
+                <p>30. Yanındayken kendimi güvende hissetmem.</p>
+                <p>31. En saçma halimle bile beni sevmen.</p>
+                <p>32. Yaralarımı iyileştiren şefkatin.</p>
+                <p>33. Bana olan sonsuz güvenin.</p>
+                <p>34. Beni her halimle kabul etmen.</p>
+                <p>35. Seninleyken zamanın durması.</p>
+                <p>36. Kalbimdeki o bitmek bilmeyen heyecan.</p>
+                <p>37. Varlığınla hayatıma anlam katman.</p>
+                <p>38. Bana "iyi ki" dedirten tek kişi olman.</p>
+                <p>39. Saçlarının kokusu.</p>
+                <p>40. Ellerinin ellerime tam oturması.</p>
+                <p>41. Uykulu ses tonun.</p>
+                <p>42. Sinirlendiğinde bile çok tatlı olman.</p>
+                <p>43. En sevdiğin kıyafetin içindeki halin.</p>
+                <p>44. Yemek yerkenki mutluluğun.</p>
+                <p>45. Heyecanlanınca hızlı hızlı konuşman.</p>
+                <p>46. Bana ismimle seslenişin.</p>
+                <p>47. Mesaj attığında ekrana bakıp istemsizce gülmem.</p>
+                <p>48. Fotoğraflarındaki o doğal güzelliğin.</p>
+                <p>49. Mesafelerin aşkımıza engel olamayışı.</p>
+                <p>50. Ekrandan bile olsa bana sarılabilmen.</p>
+                <p>51. Her kavuşma anımızın kutsallığı.</p>
+                <p>52. Uzaklık anlarındaki o buruk ama umutlu bekleyiş.</p>
+                <p>53. Sesini duyduğum an tüm yorgunluğumun geçmesi.</p>
+                <p>54. Uzaklarda olsan da kalbimin tam içinde yaşaman.</p>
+                <p>55. Sabrınla bana güç vermen.</p>
+                <p>56. Seninle kurduğum tüm hayallerin güzelliği.</p>
+                <p>57. İleride aynı çatı altında uyanma fikri.</p>
+                <p>58. Birlikte gideceğimiz şehirlerin hayali.</p>
+                <p>59. Yaşlandığımızda bile elini tutacak olma ihtimalim.</p>
+                <p>60. Seninle her şeye "varım" dedirtmen.</p>
+                <p>61. Hayatımın geri kalanında sadece seni istemem.</p>
+                <p>62. Ruhumun huzuru olman.</p>
+                <p>63. Karanlığımdaki ışığım olman.</p>
+                <p>64. Aldığım en güzel nefes olman.</p>
+                <p>65. Her gün seni sevmek için yeni bir sebep vermen.</p>
+                <p>66. Dinlediğim her şarkıda seni bulmam.</p>
+                <p>67. Okuduğum şiirlerin hep seni anlatması.</p>
+                <p>68. Gökyüzündeki en parlak yıldızım olman.</p>
+                <p>69. Vazgeçemediğim en güzel alışkanlığım olman.</p>
+                <p>70. Kalbimin tek ve gerçek sahibi olman.</p>
+                <p>71. Uykudan önceki son güzel düşüncem.</p>
+                <p>72. Uyandığımdaki ilk gülümseme sebebim.</p>
+                <p>73. Tüm dualarımın en güzel karşılığı olman.</p>
+                <p>74. Hayatımın en güzel tesadüfü.</p>
+                <p>75. Umudumun hiç bitmeyen kaynağı.</p>
+                <p>76. Sadece benim "Zehra'm" olman.</p>
+                <p>77. Bana gerçek aşkın ne olduğunu öğretmen.</p>
+                <p>78. Kelimelerin yetmediği o özel anlarımız.</p>
+                <p>79. Varlığının içimi ısıtan sıcaklığı.</p>
+                <p>80. Sesindeki o dinlendirici huzur.</p>
+                <p>81. İnce düşünceli ve kibar olman.</p>
+                <p>82. Ne olursa olsun her zaman arkamda durman.</p>
+                <p>83. En büyük hatalarımı bile sevginle güzelleştirmen.</p>
+                <p>84. Hayata sıkı sıkı tutunma sebebim olman.</p>
+                <p>85. Başarısız olduğumda bile bana herkesten çok inanman.</p>
+                <p>86. En yorgun olduğum anlarda bile seninle konuşunca yeniden doğmuş gibi hissetmem.</p>
+                <p>87. Başarılarımda yanımda olup, mutluluğumu benden daha çok kutlaman.</p>
+                <p>88. Sıradan bir günü bile sadece varlığınla unutulmaz bir anıya dönüştürebilmen.</p>
+                <p>89. Okul stresini bir mesajınla unutturabilmen.</p>
+                <p>90. Gelecekte kuracağımız o evin hayali kokusu.</p>
+                <p>91. Birlikte içeceğimiz sabah kahvelerinin heyecanı.</p>
+                <p>92. Seninle sessizce oturmanın bile dünyanın en huzurlu işi olması.</p>
+                <p>93. En zor sınavlarımdan bile daha öncelikli olman.</p>
+                <p>94. Kalbimin en gizli şifresi olman.</p>
+                <p>95. Her bakışında beni kendine yeniden aşık etmen.</p>
+                <p>96. Bana olan bitmek bilmeyen ilgin ve alakan.</p>
+                <p>97. Beklemediğim anlarda yaptığın küçük sürprizlerin.</p>
+                <p>98. Sayende kendime olan güvenimin artması.</p>
+                <p>99. Senin olduğun her yerin benim için "ev" olması.</p>
+                <p>100. En iyi yol arkadaşım ve sırdaşım olman.</p>
+                <p>101. Bana bakarken dünyayı unutman.</p>
+                <p>102. Sesindeki o şefkatli tını.</p>
+                <p>103. Zorluklara karşı birlikte göğüs germemiz.</p>
+                <p>104. Hayallerime ortak olman.</p>
+                <p>105. Küçük bir mesajınla günümü aydınlatman.</p>
+                <p>106. Seninleyken hiçbir şeyden korkmamam.</p>
+                <p>107. Sabrının güzelliği.</p>
+                <p>108. Kalbindeki sonsuz iyilik.</p>
+                <p>109. Her zaman doğruyu söylemen.</p>
+                <p>110. Bana kattığın tüm güzellikler.</p>
+                <p>111. Bir bakışınla tüm dünyayı karşıma alabilecek cesareti bana vermen.</p>
+                <p>112. Hamarat olman.</p>
+                <p>113. Sesinin her notasını sevmem.</p>
+                <p>114. Varlığının verdiği o tarifsiz güven.</p>
+                <p>115. Seninle her şeyi konuşabilmem.</p>
+                <p>116. Bakışlarındaki o masumiyet.</p>
+                <p>117. Elimi tuttuğundaki o sıcaklık.</p>
+                <p>118. Şakalarıma olan sabrın.</p>
+                <p>119. Benimle gülmen.</p>
+                <p>120. Benimle hayal kurman.</p>
+                <p>121. Sadece ikimizin bildiği o kelimeler.</p>
+                <p>122. Aramızdaki o özel espri anlayışı.</p>
+                <p>123. Fırtıko olman.</p>
+                <p>124. Birbirimizi kelimeler olmadan anlayabilmemiz.</p>
+                <p>125. Kalplerimizin aynı ritimde atması.</p>
+                <p>126. Seninle geçen her dakikanın değerini bilmen.</p>
+                <p>127. Bana olan bağlılığın.</p>
+                <p>128. Hayatımdaki en değerli varlık olman.</p>
+                <p>129. Kalbimin en derin köşesindeki yerin.</p>
+                <p>130. Seni düşünmenin bile içimi ısıtması.</p>
+                <p>131. Bana verdiğin o tarifsiz mutluluk.</p>
+                <p>132. Her kavgamızdan sonra daha sıkı bağlanmamız.</p>
+                <p>133. Affedici ve anlayışlı olman.</p>
+                <p>134. Benim için yaptıklarını asla unutmaman.</p>
+                <p>135. Seninle her şeyin daha renkli olması.</p>
+                <p>136. Dünyayı senin gözlerinden görmeyi sevmem.</p>
+                <p>137. Bana verdiğin o sonsuz enerji.</p>
+                <p>138. En kötü günümde bile yanımda hissetmem.</p>
+                <p>139. Sesinin huzur verici melodisi.</p>
+                <p>140. Bakışlarındaki o bitmeyen şefkat.</p>
+                <p>141. Saçının her teli için.</p>
+                <p>142. Attığın her adımda yanında olma isteğim için.</p>
+                <p>143. Bana dünyadaki en özel insanmışım gibi hissettirmen.</p>
+                <p>144. Karşıma çıkan en büyük şans olman.</p>
+                <p>145. Hayatımı güzelleştiren o dokunuşların.</p>
+                <p>146. Seninle yaşlanma fikrinin güzelliği.</p>
+                <p>147. Kalbimdeki sönmeyen ateş olman.</p>
+                <p>148. Bana olan sonsuz sadakatin.</p>
+                <p>149. Seninle her fırtınayı aşabileceğimizi bilmek.</p>
+                <p>150. Sadece senin yanında huzur bulmam.</p>
+                <p>151. Gözlerindeki o derin anlam için.</p>
+                <p>152. Gülüşündeki o saklı cennet için.</p>
+                <p>153. Kalbindeki o büyük sevgi için.</p>
+                <p>154. Bana inandığın her an için.</p>
+                <p>155. Elimden tuttuğun her saniye için.</p>
+                <p>156. Sesini duyduğum her telefon için.</p>
+                <p>157. Bana attığın her mesaj için.</p>
+                <p>158. Birlikte kurduğumuz tüm cümleler için.</p>
+                <p>159. Geleceğe dair verdiğimiz sözler için.</p>
+                <p>160. Geçmişteki tüm anılarımız için.</p>
+                <p>161. Paylaştığımız tüm sessizlikler için.</p>
+                <p>162. Seninle izlediğimiz her manzara için.</p>
+                <p>163. Bana verdiğin her söz için.</p>
+                <p>164. Hayatıma kattığın o büyük anlam için.</p>
+                <p>165. Kalbimin ritmini değiştirdiğin için.</p>
+                <p>166. Beni her gün yeniden kendine aşık ettiğin için.</p>
+                <p>167. Dünyadaki tüm kötülüklerden beni koruyan sevgin için.</p>
+                <p>168. Yanımda olduğun her an için teşekkürler.</p>
+                <p>169. Seni sevmek dünyanın en güzel işi.</p>
+                <p>170. Kalbim sadece senin için atıyor.</p>
+                <p>171. Sen benim diğer yarımsın.</p>
+                <p>172. Hayatımdaki en güzel şiirsin.</p>
+                <p>173. En sevdiğim şarkısın.</p>
+                <p>174. Ruhumun eşisin.</p>
+                <p>175. Benim mucizemsin.</p>
+                <p>176. Hayallerimin gerçeğe dönüşmüş halisin.</p>
+                <p>177. Varlığınla dünyayı güzelleştiriyorsun.</p>
+                <p>178. Seninle her gün yeni bir başlangıç.</p>
+                <p>179. Kalbimdeki en büyük hazinesin.</p>
+                <p>180. Seni sevmekten asla vazgeçmeyeceğim.</p>
+                <p>181. 11 aydır hayatımdaki en büyük neşesin.</p>
+                <p>182. Sabrın ve anlayışın için teşekkürler.</p>
+                <p>183. Bana kattığın her gülümseme için.</p>
+                <p>184. Kalbimdeki en özel sığınaksın.</p>
+                <p>185. Seni her halinle çok seviyorum.</p>
+                <p>186. Sen benim canımın içisin.</p>
+                <p>187. Dünyanın en güzel kalpli insanısın.</p>
+                <p>188. Seninle gurur duyuyorum.</p>
+                <p>189. Yanında olmak için her şeyi yaparım.</p>
+                <p>190. Mesafeler sadece bizi daha çok güçlendiriyor.</p>
+                <p>191. Seni her geçen gün daha fazla özlüyorum.</p>
+                <p>192. Sen benim her şeyimsin.</p>
+                <p>193. İyi ki varsın, iyi ki benimlesin.</p>
+                <p>194. Kalbimdeki tek prensessin.</p>
+                <p>195. Seninle olan her anım paha biçilemez.</p>
+                <p>196. Gelecek seninle çok daha parlak.</p>
+                <p>197. Seni sevmek bana çok yakışıyor.</p>
+                <p>198. Bizim hikayemiz en güzeli.</p>
+                <p>199. 11. ayımız kutlu olsun bir tanem.</p>
+                <p>200. Çünkü sen sadece SEN olduğun için seni çok seviyorum.</p>
+
+            </div>
+        </div>
+
+        <div id="galeri" class="content-section hidden">
+    <div class="glass-card">
+        <h2 class="section-title">Anılarımız</h2>
+        <div class="photo-gallery">
+            <!-- 1. Satır -->
+            <div class="photo-item"><img src="imgs/foto1.jpg" alt="Anı 1"></div>
+            <div class="photo-item"><img src="imgs/foto2.jpg" alt="Anı 2"></div>
+            
+            <!-- 2. Satır -->
+            <div class="photo-item"><img src="imgs/foto3.jpg" alt="Anı 3"></div>
+            <div class="photo-item"><img src="imgs/foto4.jpg" alt="Anı 4"></div>
+            
+            <!-- 3. Satır -->
+            <div class="photo-item"><img src="imgs/foto5.jpg" alt="Anı 5"></div>
+            <div class="photo-item"><img src="imgs/foto6.jpg" alt="Anı 6"></div>
+            
+            <!-- 4. Satır -->
+            <div class="photo-item"><img src="imgs/foto7.jpg" alt="Anı 7"></div>
+            <div class="photo-item"><img src="imgs/foto8.jpg" alt="Anı 8"></div>
+            
+            <!-- 5. Satır -->
+            <div class="photo-item"><img src="imgs/foto9.jpg" alt="Anı 9"></div>
+            <div class="photo-item"><img src="imgs/foto10.jpg" alt="Anı 10"></div>
+        </div>
+        <p style="margin-top:20px; color:var(--bright-yellow); font-family: 'Dancing Script'; font-size: 1.5rem;">
+            Her karemiz ayrı bir hikaye... ✨
+        </p>
+    </div>
+</div>
+
+        <div id="mektup" class="content-section hidden">
+            <div class="glass-card letter-paper">
+                <h2 class="section-title">Canım Zehra'ma...</h2>
+                <div class="letter-content">
+    <p>Canım Zehra’m,</p>
+    <p>Bu satırlara nasıl başlayacağımı inan çok düşündüm ama kalbimden geçen ilk ve en yalın şey şu: <strong>Seni her şeyden çok seviyorum.</strong></p>
+    <p>Bugün 11. ayımıza giriyoruz. 4 Haziran’dan beri hayatımdaki en güzel varlıksın. Seninle öğrendiğim bu sevgi, 400 kilometreyi bile sadece bir sayıdan ibaret kıldı.</p>
+    <p>Birlikte geçirdiğimiz her güzel an için sana sonsuz teşekkür ederim. Hayatımı öylesine güzelleştirdin ki, sensiz bir gelecek hayal etmek bile imkansız artık.</p>
+    <p>Zaman zaman birbirimizi kırdığımız o kötü günler için senden tüm kalbimle özür dilerim. Seni dünyanın en mutlu kadını yapmak benim en büyük sözüm olsun.</p>
+    <p>Daha nice aylara, nice yıllara... Sen benim en güzel "iyi ki"msin.</p>
+    <p class="signature">Seni Çok Seviyorum ❤️</p>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
